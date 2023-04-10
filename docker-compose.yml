@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  simple-express-app:
+    image: simple-express-app
+    deploy:
+      replicas: 2
+    ports:
+      - "3000:3000"
