@@ -9,7 +9,7 @@ pipeline {
                         script: 'git rev-parse --short HEAD',
                         returnStdout: true
                     ).trim()
-                    def imageName = "Galower/simple-express:${gitCommitHash}"
+                    def imageName = "galower/simple-express:${gitCommitHash}"
                     docker.build(imageName)
                 }
             }
